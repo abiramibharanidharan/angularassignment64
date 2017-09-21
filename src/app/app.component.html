@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<div>
+First Name:<input type="text" (input)="FirstName" name="first" #first><br>
+Last Name:<input type="text" (input)="LastName"  name="last" #last><br>
+<input type="button" value="Click" (click)="displaytitle(first.value,last.value)">
+
+</div>
